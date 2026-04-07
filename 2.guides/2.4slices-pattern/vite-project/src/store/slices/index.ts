@@ -14,3 +14,10 @@ export const createBearSlice: StateCreator<Store> = (set) => ({
   addBear: () => set((state) => ({ bears: state.bears! + 1 })),
   eatFish: () => set((state) => ({ fishes: state.fishes! - 1 })),
 });
+
+export const createBearFishSlice: StateCreator<Store> = (set, get) => ({
+  addBearAndFish: () => {
+    get().addBear!();
+    get().addFish!();
+  },
+});

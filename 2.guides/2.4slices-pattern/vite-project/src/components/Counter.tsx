@@ -1,23 +1,26 @@
-import { useStore } from '../store';
+import { useBoundStore } from '../store';
 
 export const Counter = () => {
-  const fishes = useStore((state) => state.fishes);
-  const addFish = useStore((state) => state.addFish);
+  const fishes = useBoundStore((state) => state.fishes);
+  const addFish = useBoundStore((state) => state.addFish);
 
-  const bears = useStore((state) => state.bears);
-  const addBear = useStore((state) => state.addBear);
-  const eatFish = useStore((state) => state.eatFish);
+  const bears = useBoundStore((state) => state.bears);
+  const addBear = useBoundStore((state) => state.addBear);
+  const eatFish = useBoundStore((state) => state.eatFish);
+
+  const addBearAndFish = useBoundStore((state) => state.addBearAndFish);
 
   return (
     <>
       <div>
-        <span>{fishes}</span>
+        <span>Fishes:{fishes}</span>
         <button onClick={addFish}>Add fish</button>
       </div>
       <div>
-        <span>{bears}</span>
+        <span>Bears: {bears}</span>
         <button onClick={addBear}>Add bear</button>
         <button onClick={eatFish}>Eat fish</button>
+        <button onClick={addBearAndFish}>Add bear and fish</button>
       </div>
     </>
   );

@@ -1,6 +1,6 @@
 import { useMapStore } from '../store';
 
-export const MapAndSet = () => {
+export const UseMap = () => {
   useMapStore.setState((state) => ({
     foo: new Map(state.foo).set('c', 4),
   }));

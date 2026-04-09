@@ -1,9 +1,11 @@
-import { MapAndSet } from './components';
+// import { UseMap } from './components';
+import { UseSet } from './components';
 
 function App() {
   return (
     <>
-      <MapAndSet />
+      {/* <UseMap /> */}
+      <UseSet />
     </>
   );
 }

@@ -1,11 +1,22 @@
 // import { BearCounter } from './components';
-import { ResetZoo } from './components';
+// import { ResetZoo } from './components';
+// import { ThreeBear } from './components';
+// import { MultipleSelectors } from './components';
+
+// import { TotalFood } from './components';
+// import { EightBear } from './components';
+import { Zoo } from './components';
 
 function App() {
   return (
     <>
       {/* <BearCounter /> */}
-      <ResetZoo />
+      {/* <ResetZoo /> */}
+      {/* <ThreeBear /> */}
+      {/* <MultipleSelectors /> */}
+      {/* <TotalFood /> */}
+      {/* <EightBear /> */}
+      <Zoo />
     </>
   );
 }
